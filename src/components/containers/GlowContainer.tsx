@@ -19,7 +19,7 @@ const GlowContainer = ({
   return (
     <div
       className={`${
-        isPhone ? '' : 'flex'
+        isPhone ? 'block' : 'flex'
       } justify-center bg-transparent items-center lg:w-2/5 xl:w-1/3 md:w-1/2 rounded-2xl aspect-square ${
         className ?? ''
       }`}
@@ -27,7 +27,7 @@ const GlowContainer = ({
         <img
           src={asset}
           className={`${
-            isPhone ? 'h-full' : 'w-full'
+            isPhone ? 'h-full w-full' : 'w-full'
           } object-contain ${color} ${shadow} drop-shadow-2xl transition-all duration-500 `}
         />
     </div>

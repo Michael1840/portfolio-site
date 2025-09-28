@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-background: #020719;
+  --color-container: #1e293b;
+  --color-onContainer: #334155;
+
+  --color-textPrimary: #ffffff;
+  --color-textSecondary: #cbd5e1;
+  --color-textTertiary: #94a3b8;
+
+  --color-borderPrimary: #1e293b;
+  --color-borderSecondary: #334155;
+  --color-borderTertiary: #475569;
+
+  --color-accentBlue: #22d3ee;
+  --color-accentBlue-20: rgba(34, 211, 238, 0.2);
+  --color-accentBlue-40: rgba(34, 211, 238, 0.4);
+
+  --color-accentPink: #f770ff;
+  --color-accentPink-20: rgba(247, 112, 255, 0.2);
+  --color-accentPink-40: rgba(247, 112, 255, 0.4);
+
+  --color-accentOrange: #e4742f;
+  --color-accentOrange-20: rgba(228, 116, 47, 0.2);
+  --color-accentOrange-40: rgba(228, 116, 47, 0.4);
+
+  --color-button: #06b6d4;
+  --color-buttonHover: #475569;
+}
+
+body {
+  @apply bg-background;
+  @apply font-inter;
+  @apply text-white;
+}
+
+@layer utilities {
+  .custom-clip {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 80%,
+      65% 80%,
+      65% 100%,
+      36% 100%,
+      36% 80%,
+      0 80%
+    );
+
+    -webkit-clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 80%,
+      65% 80%,
+      65% 100%,
+      36% 100%,
+      36% 80%,
+      0 80%
+    );
+  }
+}

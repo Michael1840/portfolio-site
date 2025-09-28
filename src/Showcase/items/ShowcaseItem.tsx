@@ -22,7 +22,10 @@ const ShowcaseItem = ({
   asset: string;
 }) => {
   return (
-    <RowContainer gap="xl:gap-30 lg:gap-20 gap-10" className="items-center">
+    <RowContainer
+      gap="xl:gap-30 lg:gap-20 md:gap-10 gap-10"
+      className="items-center"
+    >
       <GlowContainer
         isPhone={isPhone}
         asset={asset}
@@ -30,7 +33,7 @@ const ShowcaseItem = ({
         className={`${isRight ? 'md:order-3 sm:order-1' : 'order-1'} `}
       />
       <ColumnContainer
-        className={`flex flex-col flex-2 gap-5 items-start justify-center ${
+        className={`flex flex-col flex-2 gap-5 items-start ${
           isRight ? 'md:order-2 sm:order-2' : 'order-2'
         }`}
       >
@@ -41,11 +44,13 @@ const ShowcaseItem = ({
         <h1 className={`text-white font-extrabold text-5xl font-montserrat`}>
           {name}
         </h1>
-        <p>{description}</p>
+        <p className="justify-self-center md:justify-self-start">
+          {description}
+        </p>
         <OutlineButton title={buttonText} onClick={() => {}} />
       </ColumnContainer>
       <div
-        className={`flex-1 sm:hidden ${
+        className={`hidden md:flex flex-1 ${
           isRight ? 'md:order-1 sm:order-3' : 'order-3'
         }`}
       />

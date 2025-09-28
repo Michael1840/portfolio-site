@@ -12,7 +12,7 @@ import HeadingText from '../components/custom/HeadingText';
 const HeroSection = () => {
   return (
     <div>
-      <PageSection className="xl:px-50 lg:px-40 p-25 justify-center items-center duration-1000">
+      <PageSection className="xl:px-50 lg:px-40 md:p-25 p-15 justify-center items-center duration-1000">
         {/* LEFT SIDE */}
         <PageContainer className="flex ">
           <div>

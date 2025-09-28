@@ -11,7 +11,7 @@ const GradientButton = ({
     return (
       <button
         type="button"
-        className="flex flex-row rounded-lg bg-gradient-to-r from-accentBlue to-accentPink py-1.5 px-8 mt-5 shadow-accentBlue hover:shadow-2xl hover:scale-105 transition-all transition-discrete"
+        className="flex flex-row rounded-lg bg-gradient-to-r from-accentBlue to-accentPink py-1.5 px-8 shadow-accentBlue hover:shadow-2xl hover:scale-105 transition-all transition-discrete"
         disabled
       >
         <svg
@@ -44,7 +44,7 @@ const GradientButton = ({
     <button
       type="submit"
       onClick={() => onClick()}
-      className="rounded-lg bg-gradient-to-r from-accentBlue to-accentPink py-1.5 px-8 mt-5 shadow-accentBlue hover:shadow-2xl hover:scale-105 transition-all transition-discrete"
+      className="rounded-lg bg-gradient-to-r from-accentBlue to-accentPink py-1.5 px-8  shadow-accentBlue hover:shadow-2xl hover:scale-105 transition-all transition-discrete"
     >
       {title}
     </button>

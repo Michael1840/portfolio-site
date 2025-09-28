@@ -62,7 +62,7 @@ const ContactSection = () => {
 
   return (
     <div>
-      <PageSection className="flex flex-wrap sm:gap-y-0 xl:px-50 lg:px-40 sm:px-25">
+      <PageSection className="flex flex-wrap sm:gap-y-0 xl:px-50 lg:px-40 sm:px-25 p-15">
         <PageContainer className="md:py-10 sm:py-10 justify-center items-center duration-1000">
           <HeadingText title="Get In" subtitle="Contact with Me" />
           <p className="font-light text-m mt-5">

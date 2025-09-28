@@ -5,10 +5,10 @@ import ShowcaseItem from './items/ShowcaseItem';
 
 const ShowcaseSection = () => {
   return (
-    <PageSection className="xl:px-50 lg:px-40 p-25 animate-in fade-in duration-1000">
+    <PageSection className="xl:px-50 lg:px-40 sm:p-25 p-15 animate-in fade-in duration-1000">
       <PageContainer>
         <HeadingText title="Selected" subtitle="Work" />
-        <p className="mt-5 w-1/2 mb-20">
+        <p className="mt-5 md:w-1/2 sm:w-full mb-20">
           A curated collection of projects that showcase my passion for creating
           exceptional digital experiences.
         </p>

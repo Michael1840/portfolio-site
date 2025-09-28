@@ -27,10 +27,10 @@ const ShowcaseItem = ({
         isPhone={isPhone}
         asset={asset}
         isBlue={!isRight}
-        className={isRight ? 'md:order-3 sm:order-1' : 'order-1'}
+        className={`${isRight ? 'md:order-3 sm:order-1' : 'order-1'} `}
       />
       <ColumnContainer
-        className={`flex flex-col flex-2 gap-5 items-start ${
+        className={`flex flex-col flex-2 gap-5 items-start justify-center ${
           isRight ? 'md:order-2 sm:order-2' : 'order-2'
         }`}
       >

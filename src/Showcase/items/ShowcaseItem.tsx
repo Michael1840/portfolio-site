@@ -30,11 +30,11 @@ const ShowcaseItem = ({
         isPhone={isPhone}
         asset={asset}
         isBlue={!isRight}
-        className={`${isRight ? 'md:order-3 sm:order-1' : 'order-1'} `}
+        className={`${isRight ? 'md:order-2 sm:order-1' : 'order-1'} `}
       />
       <ColumnContainer
         className={`flex flex-col flex-2 gap-5 items-start ${
-          isRight ? 'md:order-2 sm:order-2' : 'order-2'
+          isRight ? 'md:order-1 sm:order-2' : 'order-2'
         }`}
       >
         <DotTextContainer
@@ -49,11 +49,6 @@ const ShowcaseItem = ({
         </p>
         <OutlineButton title={buttonText} onClick={() => {}} />
       </ColumnContainer>
-      <div
-        className={`hidden md:flex flex-1 ${
-          isRight ? 'md:order-1 sm:order-3' : 'order-3'
-        }`}
-      />
     </RowContainer>
   );
 };

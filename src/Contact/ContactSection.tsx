@@ -1,4 +1,6 @@
+import { useForm, ValidationError } from '@formspree/react';
 import { useEffect, useState } from 'react';
+import GradientButton from '../components/buttons/GradientButton';
 import ColumnContainer from '../components/containers/ColumnContainer';
 import PageContainer from '../components/containers/PageContainer';
 import PageSection from '../components/containers/PageSection';
@@ -6,10 +8,8 @@ import RowContainer from '../components/containers/RowContainer';
 import HeadingText from '../components/custom/HeadingText';
 import TextInput from '../components/fields/TextInput';
 import TextInputArea from '../components/fields/TextInputArea';
-import GradientButton from '../components/buttons/GradientButton';
-import { useForm, ValidationError } from '@formspree/react';
-import SuccessMessage from '../components/messages/SuccessMessage';
 import FailureMessage from '../components/messages/FailureMessage';
+import SuccessMessage from '../components/messages/SuccessMessage';
 
 const ContactSection = () => {
   const [state, handleSubmit] = useForm('mqayeyon');
@@ -62,7 +62,7 @@ const ContactSection = () => {
 
   return (
     <div>
-      <PageSection className="flex flex-wrap sm:gap-y-0 xl:px-50 lg:px-40 sm:px-25 p-15">
+      <PageSection className="flex flex-wrap sm:gap-y-0 xl:px-50 lg:px-40 sm:px-25 p-5">
         <PageContainer className="md:py-10 sm:py-10 justify-center items-center duration-1000">
           <HeadingText title="Get In" subtitle="Contact with Me" />
           <p className="font-light text-m mt-5">

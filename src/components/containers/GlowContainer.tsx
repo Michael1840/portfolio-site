@@ -28,7 +28,7 @@ const GlowContainer = ({
           src={asset}
           className={`${
             isPhone ? 'h-full' : 'w-full'
-          } object-contain ${color} ${shadow} justify-self-center drop-shadow-2xl transition-all duration-500 `}
+          } object-contain ${color} ${shadow} drop-shadow-2xl transition-all duration-500 `}
         />
     </div>
 
